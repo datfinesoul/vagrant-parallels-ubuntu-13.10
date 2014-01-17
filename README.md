@@ -19,8 +19,14 @@ Definition based on template at https://github.com/jedi4ever/veewee
 
 - Check out this repository
 - `bundle install`
-- There is a bug with parallels compacting images atm, so you need to comment out the following line in a veewee file located in your ruby directory. (In my case the base is `~/.rvm/gems/ruby-1.9.3-p448/`
-  `shell_exec optimize_command`
+- There is a bug with parallels compacting images atm, so you need to comment out the following line in a veewee file located in your ruby directory.
+  
+  (In my case the base is `~/.rvm/gems/ruby-1.9.3-p448/`)
+  
+  ```
+  shell_exec optimize_command`
+  ```
+  
   in
   `gems/veewee-0.3.12/lib/veewee/provider/parallels/box/export.rb`
 
